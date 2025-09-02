@@ -17,3 +17,6 @@ dependencies = [
 
 [project.scripts]
 insait-agent-handsahke = "api_contract_validator.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/api_contract_validator"]
