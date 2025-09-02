@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "api_contract_validator"
+version = "0.1.0"
+description = "Minimal API contract validator for request payloads."
+authors = [
+    { name = "Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2,<3"
+]
+
+[project.scripts]
+api_contract_validator = "api_contract_validator.__main__:main"

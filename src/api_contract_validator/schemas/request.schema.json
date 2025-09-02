@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "conversation_id": { "type": "string", "format": "uuid" },
+    "user_id": { "type": "string", "format": "uuid" },
+    "conversation_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "sender": { "type": "string" },
+          "message": { "type": "string" }
+        },
+        "required": ["timestamp", "sender", "message"]
+      }
+    },
+    "last_message": { "type": ["string", "null"] },
+    "query": { "type": "string" },
+    "task_prompt": { "type": ["string", "null"] },
+    "timestamp": { "type": "string", "format": "date-time" }
+  },
+  "required": [
+    "conversation_id",
+    "user_id",
+    "conversation_history",
+    "last_message",
+    "query",
+    "task_prompt",
+    "timestamp"
+  ]
+}
