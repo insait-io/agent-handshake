@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "api_contract_validator"
+name = "insait-agent-handsahke"
 version = "0.1.0"
 description = "Minimal API contract validator for request payloads."
 authors = [
@@ -16,4 +16,4 @@ dependencies = [
 ]
 
 [project.scripts]
-api_contract_validator = "api_contract_validator.__main__:main"
+insait-agent-handsahke = "api_contract_validator.__main__:main"
